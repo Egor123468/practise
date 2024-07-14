@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.login-container {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.login-container img {
+    width: 100px;
+    height: auto;
+    position: relative;
+    left: 20px;
+}
+
+.login-container h2 {
+    margin: 20px 0;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #60C2AA;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-container button.enabled {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.login-container button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.error-message {
+    display: block;
+    color: red;
+    font-size: 12px;
+    height: 12px;
+    visibility: hidden;
+    margin-top: -8px;
+    margin-bottom: 8px;
+}
+
+.input-error {
+    border: 1px solid red;
+}

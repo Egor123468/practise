@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 7px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+}
+
+.nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    margin: 0 5px;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 15px;
+    width: 140px;
+    height: 40px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+
+.nav-button:hover {
+    background-color: #e0e0e0;
+}
+
+.nav-button.active {
+    background-color: #60C2AA;
+    color: white;
+}
+
+.profile-icon img {
+    width: 30px;
+    height: auto;
+
+
+}
+.profile-icon {
+    margin-right: 10px;
+    margin-left: -10px; 
+}
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.players-field {
+    width: 550px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 70px; 
+}
+
+.players-field h3 {
+    margin-top: 0;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.player img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.player p {
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+}
+
+.game-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+}
+
+#field {
+    margin: 20px 0;
+}
+
+#field td {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    text-align: center;
+    background: #FFFFFF;
+}
+
+button {
+    background-color: #2B2B2B;
+    font-size: 18px;
+    color: white;
+    border: 2px solid #4F5151;
+    border-radius: 5%;
+    width: 200px;
+    height: 50px;
+}
+
+.chat-area {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 70px; /* отступ от header */
+}
+
+.chat-messages {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    flex-grow: 1;
+}
+
+.chat-message {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.chat-message .username {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.chat-message .time {
+    font-size: 12px;
+    color: #888;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+.chat-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-select-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.chat-input-container .player-select {
+    flex: 1;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.chat-input-container .player-select.active {
+    background-color: #60C2AA;
+    color: white;
+}
+
+#chat-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#send-button {
+    padding: 10px;
+    background-color: #60C2AA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #4aa28e;
+}
+#current-player-name {
+    margin-top: 10px; 
+    background-color: #373745;
+    color: white; 
+    padding: 10px; 
+    border-radius: 5px; 
+    margin-top: 10px; 
+    display: block; 
+    text-align: center;
+    font-size: 12px;
+}
+.player-icon {
+    vertical-align: middle; 
+    margin-bottom: 5px; 
+}
+#timer {
+    background-color: #EDEDED; 
+    padding: 10px; 
+    border-radius: 5px;
+    display: block; 
+    text-align: center;
+}

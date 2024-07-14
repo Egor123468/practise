@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход в игру</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+    <div class="login-container">
+        <img src="dog.png" alt="dog">
+        <h2>Войдите в игру</h2>
+        <input type="text" id="login" placeholder="Логин" oninput="checkInput()">
+        <span id="login-error" class="error-message"></span>
+        <input type="password" id="password" placeholder="Пароль" oninput="checkInput()">
+        <span id="password-error" class="error-message"></span>
+        <button id="loginButton" disabled>Войти</button>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
